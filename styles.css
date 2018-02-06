@@ -1,0 +1,89 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.appContainer {
+  display: grid;
+  grid-gap: 10px;
+}
+
+/* CONTROLLER STYLING */
+
+.controllerContainer {
+  display:grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.controllerItem {
+  text-align: center;
+  background: skyblue;
+  padding: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  border-style: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1)
+
+}
+
+.controllerItem:hover {
+  background: grey;
+}
+
+/* EPISODE LIST STYLING */
+
+.episodeListContainer {
+  display:grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.episode {
+  display:grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+
+}
+
+.episode:hover {
+  background: lightblue;
+}
+
+.rowHeader {
+  display:grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.rowHeader > * {
+  background: black;
+  color: white;
+  padding: 5px;
+}
+
+.header {
+  text-align: left;
+  border: none;
+  font-size: 1em;
+}
+
+
+.header:hover {
+  background: darkgrey;
+}
+
+.episode > * {
+  margin: 5px;
+  padding: 5px;
+}
+
+.episodeNumber, .seasonNumber, .numVotes, .averageRating {
+  text-align: center;
+}
+
+.badge {
+  background: red;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+}
